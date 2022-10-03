@@ -46,7 +46,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* Логотип */
@@ -62,15 +62,41 @@ body {
     color: var(--accent-color);
 }
 
-/* Стили для index.html */
+/* Main nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 /* Site nav */
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item {
+    /* background-color:  tomato; */
+}
+.site-nav .item + .item {
+    margin-left: 50px;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
 }
 
 .site-nav .link:hover, 
@@ -82,7 +108,19 @@ body {
     color: var(--accent-color);
 }
 
+/* kontact-nav */
+.kontact-nav {
+    display: flex;
+    margin-left: auto;
+}
+.kontact-nav .item + .item {
+    margin-left: 50px;
+}
 .kontact-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primery-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -104,7 +142,6 @@ body {
 }
 .hero-title {
     margin-bottom: 30px;
-    /* padding-top: 200px; */
     color: var(--accent-text-color);
     font-weight: 900;
     font-size: 44px;
@@ -135,7 +172,15 @@ body {
 /* section */
 .section {
     margin-top: 0;
-    margin-bottom: 94px;
+    /* padding-top: 94px; */
+    padding-bottom: 94px;
+}
+.section-list {
+    display: flex;
+    justify-content: center;
+}
+.section-list .item + .item {
+    margin-left: 30px;
 }
 .section-subtitle {
     margin-top: 0;
@@ -162,13 +207,27 @@ body {
     line-height: 1.17;
     text-align: center;
 }
-
+.section-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-img .item +.item {
+    margin-left: 30px;
+}
 /* team */
 .section-team {
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+
     background-color: var(--section-bg-color);
     text-align: center;
+}
+.section-team-item {
+    display: flex;
+    justify-content: space-between;
 }
 .section-subtitle-team {
     color: var(--title-text-color);
@@ -187,6 +246,58 @@ body {
 
 /* Стили для portfolio.html */
 
+.portfolio-section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* outline: 2px solid tomato; */
+
+    background-color: var(--primery-bg-color);
+}
+.portfolio-list-filters {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    margin-bottom: 34px;
+}
+.portfolio-list-filters .item + .item {
+    margin-left: 8px;
+}
+.portfolio-filters {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    color: var(--title-text-color);
+    background-color: var(--button-bg-volor-porfolio);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+}
+.portfolio-filters.primery {
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
+}
+.portfolio-filters:hover,
+.portfolio-filters:focus {
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.portfolio-list .item + .item {
+    /* margin-left: 30px; */
+}
 .section-title-portfolio {
     color: var(--title-text-color);
     font-weight: 700;
@@ -204,27 +315,7 @@ body {
     font-size: 16px;
     line-height: 1.88;
 }
-.portfolio-button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 6px 22px;
-    border: 1px solid transparent;
-    color: var(--title-text-color);
-    background-color: var(--button-bg-volor-porfolio);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-    text-align: center;
-}
-.portfolio-button.primery {
-    color: var(--accent-text-color);
-    background-color: var(--accent-color);
-}
-.portfolio-button:hover,
-.portfolio-button:focus {
-    color: var(--accent-text-color);
-    background-color: var(--accent-color);
-}
+
 /* footer */
 footer {
     padding-top: 60px;
@@ -235,6 +326,7 @@ footer {
     color: var(--accent-text-color);
 }
 .footer-link {
+    padding-bottom: 9px;
     color: var(--text-transparency-color);
     font-style: normal;
     font-weight: 400;
@@ -248,4 +340,7 @@ footer {
 .footer-link:hover,
 .footer-link:focus {
     color: var(--accent-color);
+}
+.address-list {
+    padding-top: 20px;
 }
