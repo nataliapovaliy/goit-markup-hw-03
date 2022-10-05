@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Шапка сайта -->
+    <!------------- Шапка сайта ------------->
    <header>
     <div class="container main-nav">
         <nav class="main-nav-logo">
@@ -31,12 +31,14 @@
    </header>
    
     <main>
-        <!-- Герой -->
+        <!------------- Герой ------------->
         <section class="hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button">Замовити послугу</button>
+            <div class="container">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="button">Замовити послугу</button>
+            </div>
         </section>
-        <!-- Переваги -->
+        <!------------- Переваги ------------->
         <section class="container section">
             <h2 hidden>Наші переваги</h2>
             <ul class="list section-list">
@@ -58,7 +60,7 @@
                 </li>
             </ul>
         </section>
-        <!-- Чим ми займаємося -->
+        <!------------- Чим ми займаємося ------------->
         <section class="container section">
             <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="list section-img">
@@ -67,38 +69,46 @@
                 <li class="item"><img src="./images/img-2.jpg" alt="Робота з палітрою кольорів" width="370"></li>
             </ul>
         </section>
-        <!-- Наша команда -->
+        <!------------- Наша команда ------------->
         <section class="section-team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list section-team-item">
-                    <li>
+                    <li class="team-card">
                         <img src="./images/img-3.jpg" alt="Ігор Дем'яненко" width="270">
-                        <h3 class="section-subtitle-team">Ігор Дем'яненко</h3>
-                        <p lang="en" class="section-text-team">Product Designer</p>
+                        <div class="team-card-text">
+                            <h3 class="section-subtitle-team">Ігор Дем'яненко</h3>
+                            <p lang="en" class="section-text-team">Product Designer</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-card">
                         <img src="./images/img-4.jpg" alt="Ольга Рєпіна" width="270">
-                        <h3 class="section-subtitle-team">Ольга Рєпіна</h3>
-                        <p lang="en" class="section-text-team">Frontend Developer</p>
+                        <div class="team-card-text">
+                            <h3 class="section-subtitle-team">Ольга Рєпіна</h3>
+                            <p lang="en" class="section-text-team">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-card">
                         <img src="./images/img-5.jpg" alt="Микола Тарасов" width="270">
-                        <h3 class="section-subtitle-team">Микола Тарасов</h3>
-                        <p lang="en" class="section-text-team">Marketing</p>
+                        <div class="team-card-text">
+                            <h3 class="section-subtitle-team">Микола Тарасов</h3>
+                            <p lang="en" class="section-text-team">Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-card">
                         <img src="./images/img-6.jpg" alt="Михайло Єрмаков" width="270">
-                        <h3 class="section-subtitle-team">Михайло Єрмаков</h3>
-                        <p lang="en" class="section-text-team">UI Designer</p>
+                        <div class="team-card-text">
+                            <h3 class="section-subtitle-team">Михайло Єрмаков</h3>
+                            <p lang="en" class="section-text-team">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
             
         </section>
     </main>
-    <!-- Футер -->
-   <footer>
+        <!------------- Футер ------------->
+    <footer>
         <div class="container">
             <a class="logo logo-accent" href="./index.html" lang="en">Web<span class="logo logo-accent-footer">Studio</span></a>
             <address class="address-list">
