@@ -147,13 +147,17 @@ header {
     text-align: center;
 }
 .hero-title {
+    width: 696px;
     margin-bottom: 30px;
-    color: var(--accent-text-color);
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
+    color: var(--accent-text-color);
 
 }
 
@@ -307,8 +311,12 @@ header {
     text-decoration: none;
     margin-bottom: 0;
 }
+.portfolio-link:hover {
+
+}
+
 .portfolio-link img {
-    margin-bottom: -4px;
+    display: block;
 }
 .portfolio-box {
     margin-top: 0;
