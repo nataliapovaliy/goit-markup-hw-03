@@ -355,7 +355,6 @@ footer {
     color: var(--accent-text-color);
 }
 .footer-link {
-    margin-bottom: 9px;
     color: var(--text-transparency-color);
     font-style: normal;
     font-weight: 400;
@@ -372,4 +371,7 @@ footer {
 }
 .address-list {
     padding-top: 20px;
+}
+.footer-contact-item:not(:last-child) {
+    margin-bottom: 9px;
 }
